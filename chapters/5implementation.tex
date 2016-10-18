@@ -1,0 +1,96 @@
+\chapter{Implementation\label{cha:chapter5}}
+
+
+
+\section{Environment\label{sec:env}}
+The following software, respectively operating systems, were used for the implementation:
+
+\begin{itemize}
+		\item and Ubuntu 6
+		\vspace{-0.1in} 
+		\item Scala X
+		\vspace{-0.1in} 
+		\item IntelliJ X
+		\vspace{-0.1in} 
+		\item Spark X
+		\vspace{-0.1in} 
+		\item jUnit X
+		\vspace{-0.1in} 
+		\item ....check POM for more versions
+\end{itemize}
+
+\section{General Project Structure\label{sec:projectstructure}}
+
+The Implementation has 4 marked phases that can be seen easily in the pipeline that a test needs to follow.. PICTURE
+
+\section{Preprocessing}
+linkedTarget, create virtual categories for the one that contains products: decision of which ID to put them. 
+Better structures, titles with AT and DE sometimes...
+
+\section{Feature Modeling}
+Which features, what was done
+tokens (by empty spaces)
+gr\"osse gr\"oße example
+
+attributeTextSearch
+
+ 8005 lenght. 
+ 1. Binary dense vector
+ 2. Sparse vector of hashes
+ 3. Concatenate names.
+
+\section{Word2Vector}
+Explain the model.
+
+\section{Classification: kNN}
+In general KNN
+
+\subsection{Implementation of KNN\label{sec:gui}}
+
+Structure of the algorithm. Screenshot of spark's visualization tool. 
+How many shuffles. Etc.
+
+Selection of k. Dinamically (as proposed somewhere), doesnt make any change, because top2 is almost always below suggested threshold and for finding a threshold by our own, would be so time consuming (?)
+
+\lstset{caption=JSON String Code Snippet,label=jsonstring,showstringspaces=false}
+\begin{lstlisting}
+{
+	id: 1,
+	method: "myInstance.getGroup",
+	params: ["Teammates", 2, true]
+}
+
+{
+	id: 2,
+	result: [
+		  "groupDesc":"These are my teammates",
+		  {
+			"javaClass":"src.package.MemberClass",
+			"memberName": "Bob",      
+		  }
+		]
+}\end{lstlisting}
+
+\section{Classification: SVM}
+Explain SVM
+
+\subsection{SVM in Spark}
+Explain their implementation
+
+\section{One Against All}
+Explain what is that, why is it prefered
+
+\subsection{Implementation of OAA}
+Explain my implementation
+
+\section{Cross Validation}
+Explain my/their implementation
+
+\section{Evaluation}
+Evaluation methods explanation
+
+\section{Documentation\label{sec:docu}}
+
+Everything was documented with scaladocs.
+
+
